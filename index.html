@@ -27,9 +27,15 @@
         </ul>
       </header>
       <section>
-        <p>A personal publishing and distributed social platform where you own all your data. Kinda like what blogs should have evolved into.</p>
+        <p>A <strong>personal publishing</strong> and <strong>distributed social platform</strong> where <strong>you own all your data</strong>. Kinda like what blogs should have evolved into.</p>
 
-<p>It's built on:</p>
+<h2>TL;DR</h2>
+
+<p>Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.</p>
+
+<p>Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggreggated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social netwroking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.</p>
+
+<p>Connverspace is built on:</p>
 
 <ul>
 <li><a href="https://code.google.com/p/pubsubhubbub/">PubSubHubbub</a></li>
@@ -38,82 +44,47 @@
 <li><a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a></li>
 </ul><p><img src="https://raw.github.com/converspace/specification/master/mocks/converspace.png" alt="Initial Mock"></p>
 
-<h2>What Twitter got right that blogs are missing?</h2>
+<h2>Builds on the good parts of what's come before</h2>
 
 <ul>
-<li>The no-admin, simplicity and immediacy of the textarea publishing.
+<li>Like social networks, it is a platform for both publishing and consuming content.</li>
+<li>Like blogs, it focuses on long-form original content.</li>
+<li>Like social networks, updates are realtime.</li>
+<li>Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.</li>
+<li>Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.</li>
+<li>Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.</li>
+<li>Like wikis, content is not temporal. Updates to content is equally imporant as new content.</li>
+<li>Like asymmetrical social networks, you can follow other resources.</li>
+<li>Like social networks, there is an activity stream.</li>
+<li>Like popular blogging software, is built on LAMP, the least common denominator platfrom, to facilitate mass-adoption of self-hosting.</li>
+</ul><h2>Centered around URI addressable resources</h2>
 
 <ul>
-<li>Even meta data like tags, mentions and replies required no special interface, just syntax.</li>
+<li>Resources are treated as opaque URIs and you can follow any URI addressable resource for updates.
+
+<ul>
+<li>Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.</li>
 </ul>
 </li>
-<li>The activity stream</li>
-</ul><h2>What blogs got wrong?</h2>
+<li>Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
 
 <ul>
-<li>All content was temporal, which makes editing feel dirty and elevates the value of new content over editing existing content.
-
-<ul>
-<li>Addind a stream to the personal publishing platform allows for content to be treated as being non-temporal (URIs do not have a time component) and actions on them as the temporal items (addressable via a URI that has a time component) that populate the stream. Kinda like a wiki.</li>
+<li>Followers will see an activity stream of all updates to resources they are following.</li>
 </ul>
 </li>
-<li>Missing real-time publishing
-
-<ul>
-<li>PubSubHubbub to the rescue.</li>
-</ul>
-</li>
-</ul><h2>Converspace is:</h2>
-
-<ul>
-<li>Admin-less (does not have an admin interface).</li>
-<li>Built on LAMP, the least common denominator platfrom, to facilitate mass-adoption of self-hosting.</li>
-<li>Like a blog that allows publishing of content of any size or type (long-form, mirco-updates, videos &amp; photos using oembed, links, quotes) via a single textarea.
-
-<ul>
-<li>Titles are optional and are part of the syntax (markdown?)</li>
-<li>#tags are part of the syntax and can be present anywhere in the content (like twitter)</li>
-<li>Any URI mentioned in the content will be sent a notification (see below). Is agnostic to the types of things being mentioned. Which means even other users are mentioned via URIs (kinda like linking to the other users blog when you wrote about them, in the good old days of blogging).</li>
-</ul>
-</li>
-<li>Like twitter/facebook in that it will show an ActivityStream.</li>
-<li>Centered around resources (addressable using a URI), not users and/or content. 
-
-<ul>
-<li>You can follow any resource for updates. Resource could be hierarchical. e.g. subscribing to a category will send updates to any posts in it, subscribing to the whole site will send updates to any post on it. </li>
-<li>Creation of or updates to a resource sends out PubSubHubbub notifications to anyone that is subscribed (following).</li>
-<li>Followers will see a stream of all updates to resource they are following.
-
-<ul>
-<li>So a user has 3 views
-
-<ul>
-<li>All their content</li>
-<li>Their own activity stream onsite and offsite (via <a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a>)</li>
-<li>Activity stream of resources they are following.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Followers can comment on or mention resources in their content or like/share resources in their following activity stream.
-
-<ul>
-<li>This will send out an <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>Any activity (comment, mention, like, share, etc.) performed (using an <a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a>) on resources will send out an <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> to the resource. </li>
 </ul><h2>TODO</h2>
 
 <ul>
-<li>Apps. Haven't thought about this yet but might need oAuth to support this.</li>
+<li>Data Portability: Could be done via Atom feeds or might require an API.</li>
+<li>Apps: Requires an API + oAuth (or something like it).</li>
 </ul><h2>FAQ</h2>
 
 <ul>
 <li>
 <p><strong>Why not oStatus?</strong></p>
 
-<p><a href="http://www.salmon-protocol.org/">Salmon</a> and <a href="http://code.google.com/p/webfinger/">WebFinger</a> seem unnecessarily complex. <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> aims to be the natural evolution of <a href="http://www.hixie.ch/specs/pingback/pingback">Pingback</a>.</p>
+<p><a href="http://www.salmon-protocol.org/">Salmon</a> and <a href="http://code.google.com/p/webfinger/">WebFinger</a> seem unnecessarily complex. <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> aims to be the natural successor of <a href="http://www.hixie.ch/specs/pingback/pingback">Pingback</a>.</p>
 </li>
 <li>
 <p><strong>Why not WebIntents?</strong></p>
