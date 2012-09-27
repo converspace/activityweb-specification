@@ -6,11 +6,11 @@ A personal publishing and distributed social platform where you own all your dat
 It's built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
-* [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/)
-* [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/)
+* [Activity Pingback](http://converspace.github.com/activity-pingback/)
+* [Activity Dialog](http://converspace.github.com/activity-dialog/)
 
 
-![Initial Mock](https://raw.github.com/Converspace/ConverspaceSpec/master/mocks/converspace.png)
+![Initial Mock](https://raw.github.com/converspace/specification/master/mocks/converspace.png)
 
 
 What Twitter got right that blogs are missing?
@@ -43,10 +43,10 @@ Converspace is:
   * Followers will see a stream of all updates to resource they are following.
     * So a user has 3 views
       * All their content
-      * Their own activity stream onsite and offsite (via [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/))
+      * Their own activity stream onsite and offsite (via [Activity Dialog](http://converspace.github.com/activity-dialog/))
       * Activity stream of resources they are following.
   * Followers can comment on or mention resources in their content or like/share resources in their following activity stream.
-    * This will send out an [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/) to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)
+    * This will send out an [Activity Pingback](http://converspace.github.com/activity-pingback/) to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)
 
 TODO
 ----
@@ -56,11 +56,11 @@ FAQ
 ---
 * __Why not oStatus?__
 
- [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
+ [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/activity-pingback/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
 * __Why not WebIntents?__
 
- Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activitites using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+ Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activitites using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
 Credits
 -------
