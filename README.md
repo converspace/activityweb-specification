@@ -55,7 +55,8 @@ Converspace is:
 
 TODO
 ----
-* Apps. Haven't thought about this yet but might need oAuth to support this.
+* Data Portability: Could be done via Atom feeds or might require an API.
+* Apps: Requires an API + oAuth (or something like it).
 
 FAQ
 ---
