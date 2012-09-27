@@ -20,21 +20,17 @@ Connverspace is built on:
 
 ![Initial Mock](https://raw.github.com/converspace/specification/master/mocks/converspace.png)
 
-
-What Twitter got right?
------------------------
-* Platform for both publishing and consuming content.
-* Real-time updates
-* The no-admin, simplicity and immediacy of the textarea, publishing.
-  * Even meta data like tags, mentions and replies required no special interface elements, just syntax.
-* The activity stream.
-
-
-What blogs got wrong?
----------------------
-* Was only a publishing platform.
-* Did not enable real-time publishing
-* All content was temporal, which makes editing feel dirty and elevates the value of new content over editing existing content.
+Converspace builds on the good parts of what's come before
+----------------------------------------------------------
+* Like social networks, it is a platform for both publishing and consuming content.
+* Like blogs, it focuses on long-form original content.
+* Like social networks, updates are realtime.
+* Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.
+* Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.
+* Like microblogging services, meta data like tags, mentions and replies have no special interface elements, just syntax. Even titles are part of the syntax.
+* Like wikis, content is not temporal. Updates to content is equally imporant as new content.
+* Like asymmetrical social networks, you can follow other resources.
+* Like social networks, there is an activity stream.
 
 
 Converspace is:
