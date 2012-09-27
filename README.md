@@ -3,14 +3,15 @@ Converspace
 
 A __personal publishing__ and __distributed social platform__ where __you own all your data__. Kinda like what blogs should have evolved into.
 
+TL;DR
+-----
+Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.
 
-__tl;dr version__: Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity on resources of interest, in one place, that you control, no matter where it happens on the web.
-
-__long version__: Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggreggated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social netwroking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
+Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggreggated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social netwroking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
 
 
 
-It's built on:
+Connverspace is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
 * [Activity Pingback](http://converspace.github.com/activity-pingback/)
@@ -20,19 +21,20 @@ It's built on:
 ![Initial Mock](https://raw.github.com/converspace/specification/master/mocks/converspace.png)
 
 
-What Twitter got right that blogs are missing?
-----------------------------------------------
-* The no-admin, simplicity and immediacy of the textarea publishing.
-  * Even meta data like tags, mentions and replies required no special interface, just syntax.
-* The activity stream
+What Twitter got right?
+-----------------------
+* Platform for both publishing and consuming content.
+* Real-time updates
+* The no-admin, simplicity and immediacy of the textarea, publishing.
+  * Even meta data like tags, mentions and replies required no special interface elements, just syntax.
+* The activity stream.
 
 
 What blogs got wrong?
 ---------------------
+* Was only a publishing platform.
+* Did not enable real-time publishing
 * All content was temporal, which makes editing feel dirty and elevates the value of new content over editing existing content.
-  * Addind a stream to the personal publishing platform allows for content to be treated as being non-temporal (URIs do not have a time component) and actions on them as the temporal items (addressable via a URI that has a time component) that populate the stream. Kinda like a wiki.
-* Missing real-time publishing
-  * PubSubHubbub to the rescue.
 
 
 Converspace is:
