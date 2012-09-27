@@ -3,7 +3,7 @@ Converspace
 
 A personal publishing and distributed social platform where you own all your data. Kinda like what blogs should have evolved into.
 
-It is built on:
+It's built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
 * [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/)
@@ -13,14 +13,14 @@ It is built on:
 ![Initial Mock](https://raw.github.com/Converspace/ConverspaceSpec/master/mocks/converspace.png)
 
 
-What Twitter got right that blogs are missing:
+What Twitter got right that blogs are missing?
 ----------------------------------------------
 * The no-admin, simplicity and immediacy of the textarea publishing.
   * Even meta data like tags, mentions and replies required no special interface, just syntax.
 * The activity stream
 
 
-What blogs got wrong:
+What blogs got wrong?
 ---------------------
 * All content was temporal, which makes editing feel dirty and elevates the value of new content over editing existing content.
   * Addind a stream to the personal publishing platform allows for content to be treated as being non-temporal (URIs do not have a time component) and actions on them as the temporal items (addressable via a URI that has a time component) that populate the stream. Kinda like a wiki.
@@ -58,7 +58,10 @@ FAQ
 
  [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
+* __Why not WebIntents?__
 
-Credits:
---------
+ Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activitites using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+
+Credits
+-------
 * Mocks built with the awesome freely available web demo of [Balsamiq](http://www.balsamiq.com/).
