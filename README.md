@@ -44,8 +44,12 @@ Centered around URI addressable resources
 
 TODO
 ----
-* Data Portability: Could be done via Atom feeds or might require an API.
-* Apps: Requires an API + oAuth (or something like it).
+* Data Portability: Could be done via Atom feeds just like with blogs if there is a way to associate content with all its activities and a way to represent the list of resources being followed as just another content resource.
+
+Out of scope
+------------
+* Private messaging
+* Client API/Apps
 
 FAQ
 ---
