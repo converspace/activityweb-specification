@@ -20,38 +20,27 @@ Connverspace is built on:
 
 ![Initial Mock](https://raw.github.com/converspace/specification/master/mocks/converspace.png)
 
-Converspace builds on the good parts of what's come before
-----------------------------------------------------------
+Builds on the good parts of what's come before
+----------------------------------------------
 * Like social networks, it is a platform for both publishing and consuming content.
 * Like blogs, it focuses on long-form original content.
 * Like social networks, updates are realtime.
 * Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.
 * Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.
-* Like microblogging services, meta data like tags, mentions and replies have no special interface elements, just syntax. Even titles are part of the syntax.
+* Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.
 * Like wikis, content is not temporal. Updates to content is equally imporant as new content.
 * Like asymmetrical social networks, you can follow other resources.
 * Like social networks, there is an activity stream.
+* Like popular blogging software, is built on LAMP, the least common denominator platfrom, to facilitate mass-adoption of self-hosting.
 
+Centered around URI addressable resources
+-----------------------------------------
+* Resources are treated as opaque URIs and you can follow any URI addressable resource for updates.
+ * Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.
+* Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
+  * Followers will see an activity stream of all updates to resources they are following.
+* Any activity (comment, mention, like, share, etc.) performed (using an [Activity Dialog](http://converspace.github.com/activity-dialog/)) on resources will send out an [Activity Pingback](http://converspace.github.com/activity-pingback/) to the resource. 
 
-Converspace is:
----------------
-* Admin-less (does not have an admin interface).
-* Built on LAMP, the least common denominator platfrom, to facilitate mass-adoption of self-hosting.
-* Like a blog that allows publishing of content of any size or type (long-form, mirco-updates, videos & photos using oembed, links, quotes) via a single textarea.
-  * Titles are optional and are part of the syntax (markdown?)
-  * #tags are part of the syntax and can be present anywhere in the content (like twitter)
-  * Any URI mentioned in the content will be sent a notification (see below). Is agnostic to the types of things being mentioned. Which means even other users are mentioned via URIs (kinda like linking to the other users blog when you wrote about them, in the good old days of blogging).
-* Like twitter/facebook in that it will show an ActivityStream.
-* Centered around resources (addressable using a URI), not users and/or content. 
-  * You can follow any resource for updates. Resource could be hierarchical. e.g. subscribing to a category will send updates to any posts in it, subscribing to the whole site will send updates to any post on it. 
-  * Creation of or updates to a resource sends out PubSubHubbub notifications to anyone that is subscribed (following).
-  * Followers will see a stream of all updates to resource they are following.
-    * So a user has 3 views
-      * All their content
-      * Their own activity stream onsite and offsite (via [Activity Dialog](http://converspace.github.com/activity-dialog/))
-      * Activity stream of resources they are following.
-  * Followers can comment on or mention resources in their content or like/share resources in their following activity stream.
-    * This will send out an [Activity Pingback](http://converspace.github.com/activity-pingback/) to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)
 
 TODO
 ----
