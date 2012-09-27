@@ -1,7 +1,14 @@
 Converspace
 ===========
 
-A personal publishing and distributed social platform where you own all your data. Kinda like what blogs should have evolved into.
+A __personal publishing__ and __distributed social platform__ where __you own all your data__. Kinda like what blogs should have evolved into.
+
+
+__tl;dr version__: Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity on resources of interest, in one place, that you control, no matter where it happens on the web.
+
+__long version__: Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggreggated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social netwroking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
+
+
 
 It's built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
@@ -56,7 +63,7 @@ FAQ
 ---
 * __Why not oStatus?__
 
- [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/activity-pingback/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
+ [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/activity-pingback/) aims to be the natural successor of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
 * __Why not WebIntents?__
 
