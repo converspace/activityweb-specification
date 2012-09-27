@@ -6,8 +6,8 @@ A personal publishing and distributed social platform where you own all your dat
 It is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
-* [Activity Pingback](http://converspace.github.com/ActivityPingback/)
-* [Activity Dialog](http://converspace.github.com/ActivityDialog/)
+* [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/)
+* [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/)
 
 
 ![Initial Mock](https://raw.github.com/Converspace/ConverspaceSpec/master/mocks/converspace.png)
@@ -43,10 +43,10 @@ Converspace is:
   * Followers will see a stream of all updates to resource they are following.
     * So a user has 3 views
       * All their content
-      * Their own activity stream onsite and offsite (via [Activity Dialog](http://converspace.github.com/ActivityDialog/))
+      * Their own activity stream onsite and offsite (via [Activity Dialog](http://converspace.github.com/ActivityDialogSpec/))
       * Activity stream of resources they are following.
   * Followers can comment on or mention resources in their content or like/share resources in their following activity stream.
-    * This will send out an [Activity Pingback](http://converspace.github.com/ActivityPingback/) to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)
+    * This will send out an [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/) to each of the resources in the content with an ActivityStream payload describing the activity (comment, mention, like, share, etc.)
 
 TODO
 ----
@@ -56,7 +56,7 @@ FAQ
 ---
 * __Why not oStatus?__
 
- [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/ActivityPingback/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
+ [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/ActivityPingbackSpec/) aims to be the natural evolution of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
 
 Credits:
