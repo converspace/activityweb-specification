@@ -1,7 +1,7 @@
 Converspace
 ===========
 
-A personal publishing and distributed conversation/activity platform where you own all your data and all activity on it. Kinda like what blogs should have evolved into.
+A personal publishing and distributed social platform where you own all your data. Kinda like what blogs should have evolved into.
 
 It is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
@@ -10,7 +10,7 @@ It is built on:
 * [Activity Dialog](http://converspace.github.com/ActivityDialog/)
 
 
-![Initial Mock](https://raw.github.com/sandeepshetty/converspace/master/mocks/converspace.png)
+![Initial Mock](https://raw.github.com/Converspace/ConverspaceSpec/master/mocks/converspace.png)
 
 
 What Twitter got right that blogs are missing:
