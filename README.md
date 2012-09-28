@@ -73,8 +73,8 @@ Credits
 
 See also
 --------
+* [OStatus](http://ostatus.org/)
 * [Tent Protocol](http://tent.io/)
 * [ActivityPump](http://activitypump.org/) [API](https://github.com/e14n/activitypump/blob/master/API.md)
-* [OStatus](http://ostatus.org/)
 * [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)
 * [Private Webhooks. Private Feeds.](http://blog.romeda.org/2011/03/private-webhooks-private-feeds.html)
