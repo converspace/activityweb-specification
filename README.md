@@ -7,13 +7,13 @@ A specification for a __personal publishing__ and __distributed social platform_
 
 TL;DR
 -----
-__Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.__
+__Activty Web allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.__
 
 Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggregated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social networking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
 
 
 
-Converspace is built on:
+Activity Web is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
 * [Activity Pingback](http://converspace.github.com/activity-pingback/)
@@ -52,7 +52,7 @@ TODO
 
 Out of scope
 ------------
-* __Private messaging__: Since Converspace is aiming to be the natural successor of blogging, it is only concerned with public conversations and activities.
+* __Private messaging__: Since Activity Web is aiming to be the natural successor of blogging, it is only concerned with public conversations and activities.
 * __Client API/Apps__: IMO, a protocol/standard for distributed social activities should treat URIs opaquely (and not get into application API space) to allow for interop with existing software. Client APIs can be varied as long as you have data portability, similiar to the blogging space (you might have different client APIs for wordpress and drupal for building clients, but they interop at the data level using ATOM/RSS).
 
 
@@ -64,7 +64,7 @@ FAQ
 
 * __Why not WebIntents?__
 
- Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+ Activity Web is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
 
 Similar Projects
