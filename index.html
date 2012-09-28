@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Converspace Specification by converspace</title>
+    <title>Activity Web Specification by converspace</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -17,17 +17,108 @@
   <body>
     <div class="wrapper">
       <header class="without-description">
-        <h1>Converspace Specification</h1>
+        <h1>Activity Web Specification</h1>
         <p></p>
-        <p class="view"><a href="https://github.com/converspace/specification">View the Project on GitHub <small>converspace/specification</small></a></p>
+        <p class="view"><a href="https://github.com/converspace/activity-web">View the Project on GitHub <small>converspace/activity-web</small></a></p>
         <ul>
-          <li><a href="https://github.com/converspace/specification/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/converspace/specification/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/converspace/specification">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/converspace/activity-web/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/converspace/activity-web/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/converspace/activity-web">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <p>This has been renamed and moved to <a href="https://github.com/converspace/activity-web">Acivity Web</a> to avoid confusion with <a href="https://github.com/converspace/converspace">Converspace</a> the software (the open-source reference implementation of this specification).</p>
+        <p>A specification for a <strong>personal publishing</strong> and <strong>distributed social platform</strong> where <strong>you own all your data</strong>. Kinda like what blogs should have evolved into.</p>
+
+<p><a href="https://github.com/converspace/converspace">Converspace</a> will be an open-source reference implementation (PHP+Mysql) of this specification.</p>
+
+<h2>TL;DR</h2>
+
+<p><strong>Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.</strong></p>
+
+<p>Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggregated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social networking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.</p>
+
+<p>Converspace is built on:</p>
+
+<ul>
+<li><a href="https://code.google.com/p/pubsubhubbub/">PubSubHubbub</a></li>
+<li><a href="http://activitystrea.ms/">Activity Streams</a></li>
+<li><a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a></li>
+<li><a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a></li>
+</ul><p><img src="https://raw.github.com/converspace/activity-web/master/mocks/converspace.png" alt="Initial Mock"></p>
+
+<h2>Builds on the good parts of what's come before</h2>
+
+<ul>
+<li>Like social networks, it is a platform for both publishing and consuming content.</li>
+<li>Like blogs, it focuses on long-form original content.</li>
+<li>Like social networks, updates are realtime.</li>
+<li>Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.</li>
+<li>Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.</li>
+<li>Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.</li>
+<li>Like wikis, content is not temporal. Updates to content is equally important as new content.</li>
+<li>Like asymmetrical social networks, you can follow other resources.</li>
+<li>Like social networks, there is an activity stream.</li>
+<li>Like popular blogging software, is built on LAMP, the least common denominator platform, to facilitate mass-adoption of self-hosting.</li>
+</ul><h2>Centered around URI addressable resources</h2>
+
+<ul>
+<li>Resources are treated as opaque URIs and you can follow any URI addressable resource for updates.
+
+<ul>
+<li>Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.</li>
+</ul>
+</li>
+<li>Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
+
+<ul>
+<li>Followers will see an activity stream of all updates to resources they are following.</li>
+</ul>
+</li>
+<li>Any activity (comment, mention, like, share, etc.) performed (using an <a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a>) on resources will send out an <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> to the resource. </li>
+</ul><h2>TODO</h2>
+
+<ul>
+<li>Data Portability: Could be done via Atom feeds just like with blogs if there is a way to associate content with all its activities and a way to represent the list of resources being followed as just another content resource.</li>
+<li>Push to and pull from non-compatible services like Twitter via plugins.</li>
+</ul><h2>Out of scope</h2>
+
+<ul>
+<li>
+<strong>Private messaging</strong>: Since Converspace is aiming to be the natural successor of blogging, it is only concerned with public conversations and activities.</li>
+<li>
+<strong>Client API/Apps</strong>: IMO, a protocol/standard for distributed social activities should treat URIs opaquely (and not get into application API space) to allow for interop with existing software. Client APIs can be varied as long as you have data portability, similiar to the blogging space (you might have different client APIs for wordpress and drupal for building clients, but they interop at the data level using ATOM/RSS).</li>
+</ul><h2>FAQ</h2>
+
+<ul>
+<li>
+<p><strong>Why not OStatus?</strong></p>
+
+<p><a href="http://www.salmon-protocol.org/">Salmon</a> and <a href="http://code.google.com/p/webfinger/">WebFinger</a> seem unnecessarily complex. <a href="http://converspace.github.com/activity-pingback/">Activity Pingback</a> aims to be the natural successor of <a href="http://www.hixie.ch/specs/pingback/pingback">Pingback</a>.</p>
+</li>
+<li>
+<p><strong>Why not WebIntents?</strong></p>
+
+<p>Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing <a href="http://converspace.github.com/activity-dialog/">Activity Dialog</a> does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.</p>
+</li>
+</ul><h2>Similar Projects</h2>
+
+<ul>
+<li><a href="http://tantek.pbworks.com/w/page/21743425/Falcon">http://tantek.pbworks.com/w/page/21743425/Falcon</a></li>
+</ul><h2>See also</h2>
+
+<ul>
+<li><a href="http://ostatus.org/">OStatus</a></li>
+<li><a href="http://tent.io/">Tent Protocol</a></li>
+<li>
+<a href="http://activitypump.org/">ActivityPump</a> <a href="https://github.com/e14n/activitypump/blob/master/API.md">API</a>
+</li>
+<li><a href="http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html">Watch, trust, friend</a></li>
+<li><a href="http://blog.romeda.org/2011/03/private-webhooks-private-feeds.html">Private Webhooks. Private Feeds.</a></li>
+</ul><h2>Credits</h2>
+
+<ul>
+<li>Mocks built with the awesome freely available web demo of <a href="http://www.balsamiq.com/">Balsamiq</a>.</li>
+</ul>
       </section>
     </div>
     <footer>
