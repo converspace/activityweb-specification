@@ -62,6 +62,10 @@ FAQ
 
  Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activitites using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
+Similar Projects
+----------------
+* http://tantek.pbworks.com/w/page/21743425/Falcon
+
 Credits
 -------
 * Mocks built with the awesome freely available web demo of [Balsamiq](http://www.balsamiq.com/).
