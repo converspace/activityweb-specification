@@ -1,7 +1,9 @@
-Converspace Specification
-=========================
+Activity Web Specification
+==========================
 
 A specification for a __personal publishing__ and __distributed social platform__ where __you own all your data__. Kinda like what blogs should have evolved into.
+
+[Converspace](https://github.com/converspace/converspace) will be an open-source reference implementation (PHP+Mysql) of this specification.
 
 TL;DR
 -----
@@ -18,7 +20,7 @@ Converspace is built on:
 * [Activity Dialog](http://converspace.github.com/activity-dialog/)
 
 
-![Initial Mock](https://raw.github.com/converspace/specification/master/mocks/converspace.png)
+![Initial Mock](https://raw.github.com/converspace/activity-web/master/mocks/converspace.png)
 
 Builds on the good parts of what's come before
 ----------------------------------------------
