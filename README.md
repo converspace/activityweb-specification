@@ -50,8 +50,8 @@ TODO
 
 Out of scope
 ------------
-* Private messaging
-* Client API/Apps
+* __Private messaging__: Since Converspace is aiming to be the natural successor of blogging, it is only concerned with public conversations and activities.
+* __Client API/Apps__: IMO, a protocol/standard for distributed social activities should treat URIs opaquely (and not get into application API space) to allow for interop with existing software. Client APIs can be varied as long as you have data portability, similiar to the blogging space (you might have different client APIs for wordpress and drupal for building clients, but they interop at the data level using ATOM/RSS).
 
 
 FAQ
