@@ -47,10 +47,12 @@ TODO
 * Data Portability: Could be done via Atom feeds just like with blogs if there is a way to associate content with all its activities and a way to represent the list of resources being followed as just another content resource.
 * Push to and pull from non-compatible services like Twitter via plugins.
 
+
 Out of scope
 ------------
 * Private messaging
 * Client API/Apps
+
 
 FAQ
 ---
@@ -62,13 +64,10 @@ FAQ
 
  Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
+
 Similar Projects
 ----------------
 * http://tantek.pbworks.com/w/page/21743425/Falcon
-
-Credits
--------
-* Mocks built with the awesome freely available web demo of [Balsamiq](http://www.balsamiq.com/).
 
 
 See also
@@ -78,3 +77,8 @@ See also
 * [ActivityPump](http://activitypump.org/) [API](https://github.com/e14n/activitypump/blob/master/API.md)
 * [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)
 * [Private Webhooks. Private Feeds.](http://blog.romeda.org/2011/03/private-webhooks-private-feeds.html)
+
+
+Credits
+-------
+* Mocks built with the awesome freely available web demo of [Balsamiq](http://www.balsamiq.com/).
