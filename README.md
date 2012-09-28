@@ -54,7 +54,7 @@ Out of scope
 
 FAQ
 ---
-* __Why not oStatus?__
+* __Why not OStatus?__
 
  [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/activity-pingback/) aims to be the natural successor of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
@@ -69,3 +69,11 @@ Similar Projects
 Credits
 -------
 * Mocks built with the awesome freely available web demo of [Balsamiq](http://www.balsamiq.com/).
+
+
+See also
+--------
+* [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)
+* [Tent Protocol](http://tent.io/)
+* [ActivityPump](http://activitypump.org/) [API](https://github.com/e14n/activitypump/blob/master/API.md)
+* [OStatus](http://ostatus.org/)
