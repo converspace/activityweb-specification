@@ -11,7 +11,7 @@ Like blogs you publicly publish original content. All public activity (comment, 
 
 
 
-Connverspace is built on:
+Converspace is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
 * [Activity Pingback](http://converspace.github.com/activity-pingback/)
