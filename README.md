@@ -7,7 +7,7 @@ TL;DR
 -----
 __Converspace allows you to aggregate your public online activity, public activity around the content you publish and follow public activity around resources of interest, in one place, that you control, no matter where it happens on the web.__
 
-Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggreggated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social netwroking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
+Like blogs you publicly publish original content. All public activity (comment, like, share, etc.) around it that happens anywhere on the web is aggregated on your website. When you share third-party resources, all activity around it is aggregated on your and the third-party website. Like social networking sites, you can follow resources and get updates about them. Any public activity (comment, like, share, etc.) you perform on third-party resources happens on your website (irrespective of whether it is initiated on your website via your activity stream or on a third-party website) and notifications are sent to the third-party website for aggregation.
 
 
 
@@ -28,10 +28,10 @@ Builds on the good parts of what's come before
 * Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.
 * Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.
 * Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.
-* Like wikis, content is not temporal. Updates to content is equally imporant as new content.
+* Like wikis, content is not temporal. Updates to content is equally important as new content.
 * Like asymmetrical social networks, you can follow other resources.
 * Like social networks, there is an activity stream.
-* Like popular blogging software, is built on LAMP, the least common denominator platfrom, to facilitate mass-adoption of self-hosting.
+* Like popular blogging software, is built on LAMP, the least common denominator platform, to facilitate mass-adoption of self-hosting.
 
 Centered around URI addressable resources
 -----------------------------------------
@@ -60,7 +60,7 @@ FAQ
 
 * __Why not WebIntents?__
 
- Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activitites using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+ Converspace is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
 Similar Projects
 ----------------
