@@ -1,5 +1,5 @@
-The Converspace Specification
-=============================
+Converspace Specification
+=========================
 
 A specification for a __personal publishing__ and __distributed social platform__ where __you own all your data__. Kinda like what blogs should have evolved into.
 
