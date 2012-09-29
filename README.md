@@ -60,7 +60,7 @@ FAQ
 ---
 * __Why not OStatus?__
 
- [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://activitypingback.org/) aims to be the natural successor of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
+ [OStatus](http://ostatus.org/) is built on procotols that I don't consider easy to implement (see [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)). An explicit goal of [Activity Pingback](http://activitypingback.org/) is to be easy to implement to encourage adoption.
 
 * __Why not WebIntents?__
 
