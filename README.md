@@ -3,7 +3,7 @@ Activity Web Specification
 
 A specification for a __personal publishing__ and __distributed social platform__ where __you own all your data__. Kinda like what blogs should have evolved into.
 
-[Converspace](https://github.com/converspace/converspace) will be an open-source reference implementation of this specification in PHP+Mysql.
+[Converspace](https://converspace.org) will be an open-source reference implementation of this specification in PHP+Mysql.
 
 TL;DR
 -----
@@ -16,8 +16,8 @@ Like blogs you publicly publish original content. All public activity (comment, 
 Activity Web is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
-* [Activity Pingback](http://converspace.github.com/activity-pingback/)
-* [Activity Dialog](http://converspace.github.com/activity-dialog/)
+* [Activity Pingback](http://activitypingback.org/)
+* [Activity Dialog](http://activitydialog.org/)
 
 
 ![Initial Mock](https://raw.github.com/converspace/activity-web/master/mocks/converspace.png)
@@ -41,7 +41,7 @@ Centered around URI addressable resources
  * Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.
 * Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
   * Followers will see an activity stream of all updates to resources they are following.
-* Any activity (comment, mention, like, share, etc.) performed (using an [Activity Dialog](http://converspace.github.com/activity-dialog/)) on resources will send out an [Activity Pingback](http://converspace.github.com/activity-pingback/) to the resource. 
+* Any activity (comment, mention, like, share, etc.) performed (using an [Activity Dialog](http://activitydialog.org/)) on resources will send out an [Activity Pingback](http://activitypingback.org/) to the resource. 
 
 
 TODO
@@ -60,11 +60,11 @@ FAQ
 ---
 * __Why not OStatus?__
 
- [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://converspace.github.com/activity-pingback/) aims to be the natural successor of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
+ [Salmon](http://www.salmon-protocol.org/) and [WebFinger](http://code.google.com/p/webfinger/) seem unnecessarily complex. [Activity Pingback](http://activitypingback.org/) aims to be the natural successor of [Pingback](http://www.hixie.ch/specs/pingback/pingback).
 
 * __Why not WebIntents?__
 
- Activity Web is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://converspace.github.com/activity-dialog/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+ Activity Web is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://activitydialog.org/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
 
 Similar Projects
