@@ -76,7 +76,7 @@ See also
 --------
 * [OStatus](http://ostatus.org/)
 * [Tent.io](http://tent.io/)
-* [Pump.io](http://activitypump.org/) ([API](https://github.com/e14n/activitypump/blob/master/API.md))
+* [Pump.io](http://pump.io/) ([API](https://github.com/e14n/pump.io/blob/master/API.md))
 * [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)
 * [Private Webhooks. Private Feeds.](http://blog.romeda.org/2011/03/private-webhooks-private-feeds.html)
 
