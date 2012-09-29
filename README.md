@@ -75,8 +75,8 @@ Similar Projects
 See also
 --------
 * [OStatus](http://ostatus.org/)
-* [Tent Protocol](http://tent.io/)
-* [ActivityPump](http://activitypump.org/) [API](https://github.com/e14n/activitypump/blob/master/API.md)
+* [Tent.io](http://tent.io/)
+* [Pump.io](http://activitypump.org/) ([API](https://github.com/e14n/activitypump/blob/master/API.md))
 * [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)
 * [Private Webhooks. Private Feeds.](http://blog.romeda.org/2011/03/private-webhooks-private-feeds.html)
 
