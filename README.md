@@ -21,7 +21,7 @@ Activity Web is built on:
 
 Imagine
 -------
-* You write an article on your website about the technology behind your startup
+* You write an article on your website about the technology behind your startup.
 * Someone that follows you via [PubSubHubbub](https://code.google.com/p/pubsubhubbub/), discovers the article and shares it on [Hacker News](http://news.ycombinator.com/).
 * If Hacker News supports the simple [Activity Pingback Specification](http://activitypingback.org/)
  * your website will receive a notification about your article being shared there.
