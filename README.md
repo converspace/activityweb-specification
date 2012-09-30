@@ -19,6 +19,16 @@ Activity Web is built on:
 * [Activity Pingback](http://activitypingback.org/)
 * [Activity Dialog](http://activitydialog.org/)
 
+Imagine
+-------
+* You write an article on your website about the technology behind your startup
+* Someone that follows you via [PubSubHubbub](https://code.google.com/p/pubsubhubbub/), discovers the article and shares it on [Hacker News](http://news.ycombinator.com/).
+* If Hacker News supports the simple [Activity Pingback Specification](http://activitypingback.org/)
+ * your website will receive a notification about your article being shared there.
+ * anytime someone comments on the shared link on Hacker News, your website will receive a notification about the comment on Hacker News.
+ * Your website will show you these notification as an activity stream on your website.
+ * Comments on Hacker News will appear inline on your website on the relevant article and you can reply to them from your website itself.
+* If Hacker News also supports the simple [Activity Dialog Specification](http://activitydialog.org/), any action you want to perform on Hacker News posts like upvote, comment, share, etc. will actually be performed on your website, appear on the activity stream on your website and then a notification will be sent out to Hacker News about it.
 
 ![Initial Mock](https://raw.github.com/converspace/activity-web/master/mocks/converspace.png)
 
