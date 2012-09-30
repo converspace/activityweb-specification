@@ -44,6 +44,21 @@
 <li><a href="http://activitystrea.ms/">Activity Streams</a></li>
 <li><a href="http://activitypingback.org/">Activity Pingback</a></li>
 <li><a href="http://activitydialog.org/">Activity Dialog</a></li>
+</ul><h2>Imagine</h2>
+
+<ul>
+<li>You write an article on your website about the technology behind your startup.</li>
+<li>Someone that follows you via <a href="https://code.google.com/p/pubsubhubbub/">PubSubHubbub</a>, discovers the article and shares it on <a href="http://news.ycombinator.com/">Hacker News</a>.</li>
+<li>If Hacker News supports the simple <a href="http://activitypingback.org/">Activity Pingback Specification</a>
+
+<ul>
+<li>your website will receive a notification about your article being shared there.</li>
+<li>anytime someone comments on the shared link on Hacker News, your website will receive a notification about the comment on Hacker News.</li>
+<li>Your website will show you these notification as an activity stream on your website.</li>
+<li>Comments on Hacker News will appear inline on your website on the relevant article and you can reply to them from your website itself.</li>
+</ul>
+</li>
+<li>If Hacker News also supports the simple <a href="http://activitydialog.org/">Activity Dialog Specification</a>, any action you want to perform on Hacker News posts like upvote, comment, share, etc. will actually be performed on your website, appear on the activity stream on your website and then a notification will be sent out to Hacker News about it.</li>
 </ul><p><img src="https://raw.github.com/converspace/activity-web/master/mocks/converspace.png" alt="Initial Mock"></p>
 
 <h2>Builds on the good parts of what's come before</h2>
