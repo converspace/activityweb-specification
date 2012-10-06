@@ -84,6 +84,7 @@ Similar Projects
 
 See also
 --------
+* [IndieWebCamp](indiewebcamp.com/)
 * [OStatus](http://ostatus.org/)
 * [Tent.io](http://tent.io/)
 * [Pump.io](http://pump.io/) ([API](https://github.com/e14n/pump.io/blob/master/API.md))
