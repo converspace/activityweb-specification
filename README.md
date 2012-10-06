@@ -36,13 +36,13 @@ Builds on the good parts of what's come before
 ----------------------------------------------
 * Like social networks, it is a platform for both publishing and consuming content.
 * Like blogs, it focuses on long-form original content.
-* Like social networks, updates are realtime.
+* Like social networks, updates are realtime. ([PubSubHubbub](https://code.google.com/p/pubsubhubbub/))
 * Like social networks, it has no admin panel. There is an unified interface for publishing and consuming content.
 * Like social networks, there is the simplicity and immediacy of the always present and inviting textarea for publishing.
 * Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.
 * Like wikis, content is not temporal. Updates to content is equally important as new content.
-* Like asymmetrical social networks, you can follow other resources.
-* Like social networks, there is an activity stream.
+* Like asymmetrical social networks, you can follow other resources. ([PubSubHubbub](https://code.google.com/p/pubsubhubbub/))
+* Like social networks, there is an activity stream. ([Activity Streams](http://activitystrea.ms/), [Activity Pingback](http://activitypingback.org/))
 * Like popular blogging software, is built on LAMP, the least common denominator platform, to facilitate mass-adoption of self-hosting.
 
 Centered around URI addressable resources
