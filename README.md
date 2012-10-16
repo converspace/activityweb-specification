@@ -17,7 +17,7 @@ ActivityWeb is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
 * [Activity Pingback](http://activitypingback.org/)
-* [Activity Dialog](http://activitydialog.org/)
+* [ActivityDialog](http://activitydialog.org/)
 
 Imagine
 -------
@@ -28,7 +28,7 @@ Imagine
  * anytime someone comments on the shared link on Hacker News, your website will receive a notification about the comment on Hacker News.
  * Your website will show you these notification as an activity stream on your website.
  * Comments on Hacker News will appear inline on your website on the relevant article and you can reply to them from your website itself.
-* If Hacker News also supports the simple [Activity Dialog Specification](http://activitydialog.org/), any action you want to perform on Hacker News posts like upvote, comment, share, etc. will actually be performed on your website, appear on the activity stream on your website and then a notification will be sent out to Hacker News about it.
+* If Hacker News also supports the simple [ActivityDialog Specification](http://activitydialog.org/), any action you want to perform on Hacker News posts like upvote, comment, share, etc. will actually be performed on your website, appear on the activity stream on your website and then a notification will be sent out to Hacker News about it.
 
 ![Initial Mock](https://raw.github.com/converspace/activityweb-specification/master/mocks/converspace.png)
 
@@ -51,7 +51,7 @@ Centered around URI addressable resources
  * Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.
 * Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
   * Followers will see an activity stream of all updates to resources they are following.
-* Any activity (comment, mention, like, share, etc.) performed (using an [Activity Dialog](http://activitydialog.org/)) on resources will send out an [Activity Pingback](http://activitypingback.org/) to the resource. 
+* Any activity (comment, mention, like, share, etc.) performed (using an [ActivityDialog](http://activitydialog.org/)) on resources will send out an [Activity Pingback](http://activitypingback.org/) to the resource. 
 
 
 TODO
@@ -74,7 +74,7 @@ FAQ
 
 * __Why not WebIntents?__
 
- ActivityWeb is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [Activity Dialog](http://activitydialog.org/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
+ ActivityWeb is about performing all activities on your own site so that you own all your data. WebIntents are about performing specific activities using specific services. You could achieve the same thing [ActivityDialog](http://activitydialog.org/) does using WebIntents, but that'll mean taking on a lot of unnecessary complexity.
 
 
 Similar Projects
