@@ -30,7 +30,7 @@ Imagine
  * Comments on Hacker News will appear inline on your website on the relevant article and you can reply to them from your website itself.
 * If Hacker News also supports the simple [Activity Dialog Specification](http://activitydialog.org/), any action you want to perform on Hacker News posts like upvote, comment, share, etc. will actually be performed on your website, appear on the activity stream on your website and then a notification will be sent out to Hacker News about it.
 
-![Initial Mock](https://raw.github.com/converspace/activity-web/master/mocks/converspace.png)
+![Initial Mock](https://raw.github.com/converspace/activityweb-specification/master/mocks/converspace.png)
 
 Builds on the good parts of what's come before
 ----------------------------------------------
