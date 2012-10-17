@@ -16,14 +16,14 @@ Like blogs you publicly publish original content. All public activity (comment, 
 ActivityWeb is built on:
 * [PubSubHubbub](https://code.google.com/p/pubsubhubbub/)
 * [Activity Streams](http://activitystrea.ms/)
-* [Activity Pingback](http://activitypingback.org/)
+* [ActivityPush](http://activitypush.org/)
 * [ActivityDialog](http://activitydialog.org/)
 
 Imagine
 -------
 * You write an article on your website about the technology behind your startup.
 * Someone that follows you via [PubSubHubbub](https://code.google.com/p/pubsubhubbub/), discovers the article and shares it on [Hacker News](http://news.ycombinator.com/).
-* If Hacker News supports the simple [Activity Pingback Specification](http://activitypingback.org/)
+* If Hacker News supports the simple [ActivityPush Specification](http://activitypush.org/)
  * your website will receive a notification about your article being shared there.
  * anytime someone comments on the shared link on Hacker News, your website will receive a notification about the comment on Hacker News.
  * Your website will show you these notification as an activity stream on your website.
@@ -42,7 +42,7 @@ Builds on the good parts of what's come before
 * Like microblogging services, meta-data like tags, mentions and replies can be present anywhere in the content and have no special interface elements, just syntax. Titles are optional and part of the syntax.
 * Like wikis, content is not temporal. Updates to content is equally important as new content.
 * Like asymmetrical social networks, you can follow other resources. ([PubSubHubbub](https://code.google.com/p/pubsubhubbub/))
-* Like social networks, there is an activity stream. ([Activity Streams](http://activitystrea.ms/), [Activity Pingback](http://activitypingback.org/))
+* Like social networks, there is an activity stream. ([Activity Streams](http://activitystrea.ms/), [ActivityPush](http://activitypush.org/))
 * Like popular blogging software, is built on LAMP, the least common denominator platform, to facilitate mass-adoption of self-hosting.
 
 Centered around URI addressable resources
@@ -51,7 +51,7 @@ Centered around URI addressable resources
  * Following a user resource might send updates about all content by that user. Following a category resource might send all updates about all content in that category. Following a website resource might send updates about all content by all users on that website.
 * Creation of or updates to a resource, sends out PubSubHubbub notifications to anyone that is subscribed (following) to that resource.
   * Followers will see an activity stream of all updates to resources they are following.
-* Any activity (comment, mention, like, share, etc.) performed (using an [ActivityDialog](http://activitydialog.org/)) on resources will send out an [Activity Pingback](http://activitypingback.org/) to the resource. 
+* Any activity (comment, mention, like, share, etc.) performed (using an [ActivityDialog](http://activitydialog.org/)) on resources will send out an [ActivityPush](http://activitypush.org/) to the resource. 
 
 
 TODO
@@ -70,7 +70,7 @@ FAQ
 ---
 * __Why not OStatus?__
 
- [OStatus](http://ostatus.org/) is built on procotols that I don't consider easy to implement (see [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)). An explicit goal of [Activity Pingback](http://activitypingback.org/) is to be easy to implement to encourage adoption.
+ [OStatus](http://ostatus.org/) is built on procotols that I don't consider easy to implement (see [Watch, trust, friend](http://markpasc.typepad.com/blog/2011/03/watch-trust-friend.html)). An explicit goal of [ActivityPush](http://activitypush.org/) is to be easy to implement to encourage adoption.
 
 * __Why not WebIntents?__
 
